@@ -8,7 +8,7 @@ dotenv.config();
 import userRoutes from "./modules/auth/routes.js";
 import txnRoutes from "./modules/transaction/routes.js";
 import sellerRoutes from "./modules/seller/routes.js";
-import reminderRoutes from "./modules/reminder/routes.js";
+// import reminderRoutes from "./modules/reminder/routes.js";
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(cors());
 app.use("/api/auth", userRoutes);
 app.use("/api/transaction", txnRoutes);
 app.use("/api/seller", sellerRoutes);
-app.use("/api/reminders", reminderRoutes);
+// app.use("/api/reminders", reminderRoutes);
 
 app.use((err, req, res, next) => {
 	console.log(err.message);
