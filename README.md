@@ -69,9 +69,7 @@ Response
 
 > **`Generate OTP`**
 
-Login to existing account, sends back access_token, if account not verified, sends back token
 
----
 
 | POST | /api/auth/generateotp |
 | --- | --- |
